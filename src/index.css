@@ -4,3 +4,6 @@
     box-sizing: border-box;
     font-family: "Barlow Condensed", sans-serif;
 }
+a {
+    text-decoration: none;
+}

@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import Nav from "../../component/Nav/Nav"
 import "./Home.css"
+import { Link } from "react-router-dom"
 
 export default function Home({active, setActive}) {
 
@@ -20,9 +21,11 @@ export default function Home({active, setActive}) {
             truly out of this world experience!</p>
         </div>
         <div className="homeDroite">
-            <div className="homeExploreCircle">
-                EXPLORE
-            </div>
+            <Link to='/destination'>
+              <div className="homeExploreCircle">
+                  EXPLORE
+              </div>
+            </Link>
         </div>
     </div>
   )
