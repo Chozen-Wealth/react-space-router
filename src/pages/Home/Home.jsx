@@ -1,10 +1,16 @@
+import { useEffect } from "react"
 import Nav from "../../component/Nav/Nav"
 import "./Home.css"
 
-export default function Home() {
+export default function Home({active, setActive}) {
+
+  useEffect(()=>{
+    setActive("home")
+  }, [])
+
   return (
     <div className="Home">
-      <Nav/>
+      <Nav active={active} setActive={setActive} />
         <div className="homeGauche">
             <h3>SO, YOU WANT TO TRAVEL TO</h3>
             <h1>SPACE</h1>

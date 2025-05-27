@@ -7,13 +7,14 @@ import Crew from './pages/Crew/Crew'
 import Technology from './pages/Technology/Technology'
 
 function App() {
+  const [active, setActive] = useState("home")
   return (
     <>
       <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/destination' element={<Destination/>} />
-        <Route path='/crew' element={<Crew/>} />
-        <Route path='/technology' element={<Technology/>} />
+        <Route path='/' element={<Home active={active} setActive={setActive} />} />
+        <Route path='/destination' element={<Destination active={active} setActive={setActive} />} />
+        <Route path='/crew' element={<Crew active={active} setActive={setActive} />} />
+        <Route path='/technology' element={<Technology active={active} setActive={setActive} />} />
       </Routes>
     </>
   )

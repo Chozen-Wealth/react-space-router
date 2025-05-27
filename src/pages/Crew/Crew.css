@@ -1,0 +1,6 @@
+.Crew {
+    background-image: url(../../../public/assets/crew/background-crew-desktop.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}

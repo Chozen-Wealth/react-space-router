@@ -1,0 +1,6 @@
+.Destination {
+    background-image: url(../../../public/assets/destination/background-destination-desktop.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
