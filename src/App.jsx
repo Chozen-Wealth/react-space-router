@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
-import Destination from './pages/Destination'
-import Crew from './pages/Crew'
-import Technology from './pages/Technology'
+import Home from './pages/Home/Home'
+import Destination from './pages/Destination/Destination'
+import Crew from './pages/Crew/Crew'
+import Technology from './pages/Technology/Technology'
 
 function App() {
   return (

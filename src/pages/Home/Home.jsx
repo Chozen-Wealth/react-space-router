@@ -1,8 +1,10 @@
-
+import Nav from "../../component/Nav/Nav"
+import "./Home.css"
 
 export default function Home() {
   return (
     <div className="Home">
+      <Nav/>
         <div className="homeGauche">
             <h3>SO, YOU WANT TO TRAVEL TO</h3>
             <h1>SPACE</h1>
