@@ -2,17 +2,29 @@ import { useEffect, useState } from "react"
 import Nav from "../../component/Nav/Nav"
 import "./Destination.css"
 import planetes from "./planetes.json"
-import { Link } from "react-router-dom"
+import { Link, useNavigate, useParams } from "react-router-dom"
 
 export default function Destination({active, setActive}) {
 
+  const {id} = useParams()
+  const navigate = useNavigate()
+
+  const [planeteActuel, setPlaneteActuel] = useState(null)
+  const idActuelle = parseInt(id)
+  
+  useEffect(()=>{
+    const planete = planetes.find(element => element.id === idActuelle)
+    setPlaneteActuel(planete)
+
+  }, [id])
   useEffect(()=>{
       setActive("destination")
     }, [])
 
-  const [focus, setFocus] = useState(0)
 
-  const planeteActuel = planetes.find(element => element.id === focus)
+  if (!planeteActuel) {
+    return <div>Planète introuvable</div>;
+  }
 
   return (
     <div className="Destination">
@@ -24,7 +36,7 @@ export default function Destination({active, setActive}) {
       <div className="destinationDroite">
         <div className="destinationMenu">
           {planetes.map(element => (
-            <Link className={focus === element.id ? "active" : ""}>{element.planete}</Link>
+            <Link key={element.id} to={`/destination/${element.id}`} className={idActuelle === element.id ? "active" : ""}>{element.planete}</Link>
           ))}
         </div>
         <span className="destinationTitre">{planeteActuel.planete}</span>

@@ -21,7 +21,7 @@ export default function Home({active, setActive}) {
             truly out of this world experience!</p>
         </div>
         <div className="homeDroite">
-            <Link to='/destination'>
+            <Link to='/destination/0'>
               <div className="homeExploreCircle">
                   EXPLORE
               </div>
