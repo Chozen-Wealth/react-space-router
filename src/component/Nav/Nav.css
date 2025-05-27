@@ -20,7 +20,7 @@ nav img {
 }
 .navMenu {
     width: 60%;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
     list-style: none;
     display: flex;
     align-items: center;
@@ -36,6 +36,7 @@ nav img {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 3px solid transparent;
 }
 .link.active {
     border-bottom: 3px solid white;
