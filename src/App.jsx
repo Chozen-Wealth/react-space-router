@@ -14,7 +14,7 @@ function App() {
         <Route path='/' element={<Home active={active} setActive={setActive} />} />
         <Route path="/destination" element={<Navigate to="/destination/0" />} />
         <Route path='/destination/:id' element={<Destination active={active} setActive={setActive} />} />
-        <Route path='/crew' element={<Crew active={active} setActive={setActive} />} />
+        <Route path='/crew/:id' element={<Crew active={active} setActive={setActive} />} />
         <Route path='/technology' element={<Technology active={active} setActive={setActive} />} />
       </Routes>
     </>

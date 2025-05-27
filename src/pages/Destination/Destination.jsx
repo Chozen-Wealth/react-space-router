@@ -15,8 +15,8 @@ export default function Destination({active, setActive}) {
   useEffect(()=>{
     const planete = planetes.find(element => element.id === idActuelle)
     setPlaneteActuel(planete)
-
   }, [id])
+
   useEffect(()=>{
       setActive("destination")
     }, [])

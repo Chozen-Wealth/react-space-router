@@ -4,4 +4,69 @@
     width: 100vw;
     background-size: cover;
     padding-top: 120px;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.crewGauche {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 33%;
+    height: 100%;
+}
+.crewGaucheTop span{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.crewGaucheTop span span {
+    color: white;
+}
+.crewGaucheMid {
+    display: flex;
+    flex-direction: column;
+}
+.crewGaucheMid span:first-of-type {
+    font-size: 30px;
+    font-family: "Cinzel", serif;
+    color: rgb(210, 216, 249);
+}
+.crewGaucheMid span:nth-of-type(2) {
+    font-size: 50px;
+    text-wrap: nowrap;
+    font-family: "Cinzel", serif;
+    margin-bottom: 20px;
+}
+.crewGaucheMid p {
+    line-height: 25px;
+    color: rgb(210, 216, 249);
+}
+.crewDroite {
+    width: 33%;
+    height: 100%;
+    position: relative;
+}
+.crewDroite img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.crewGaucheBot {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.dot.active {
+    background-color: white;
 }
