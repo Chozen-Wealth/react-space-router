@@ -7,7 +7,6 @@ import { Link, useNavigate, useParams } from "react-router-dom"
 export default function Destination({active, setActive}) {
 
   const {id} = useParams()
-  const navigate = useNavigate()
 
   const [planeteActuel, setPlaneteActuel] = useState(null)
   const idActuelle = parseInt(id)
