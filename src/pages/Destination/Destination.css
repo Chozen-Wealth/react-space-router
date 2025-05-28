@@ -120,7 +120,8 @@
     .destinationGauche {
         align-items: center;
         width: 100%;
-        gap: 20px;
+        gap: 30px;
+        margin-top: 50px;
     }
     .destinationDroite {
         width: 100%;

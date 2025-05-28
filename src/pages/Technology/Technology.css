@@ -8,6 +8,7 @@
     padding-right: 10%;
     display: flex;
     gap: 50px;
+    overflow: auto;
 }
 .techGauche {
     color: white;
@@ -83,4 +84,70 @@
     position: absolute;
     right: 10%;
     object-fit: cover;
+}
+@media (max-width:1024px) {
+    .Technology {
+        gap: 50px;
+        flex-direction: column;
+    }
+    .techDroite {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .techDroite > img {
+        width: 325px;
+        height: 325px;
+        position: static;
+    }
+    .techGauche {
+        width: 100%;
+        align-items: center;
+        gap: 40px;
+        margin-top: 50px;
+    }
+    .techGauche > span {
+        font-size: 24px;
+        text-wrap: nowrap;
+    }
+    .techDiv {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .techBubbles {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .techBubbles a {
+        height: 60px;
+        width: 60px;
+    }
+    .techInfos > span:last-of-type {
+        text-wrap: nowrap;
+        font-size: 40px;
+    }
+    .techInfos p {
+        width: 100%;
+    }
+    .techInfos {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        align-items: center;
+    }
+}
+@media (max-width:425px) {
+    .techInfos > span:last-of-type {
+        font-size: 32px;
+    }
+    .techDroite > img {
+        width: 300px;
+        height: 300px;
+        position: static;
+    }
 }
