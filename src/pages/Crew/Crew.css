@@ -46,14 +46,18 @@
     color: rgb(210, 216, 249);
 }
 .crewDroite {
-    width: 33%;
+    width: 50%;
     height: 100%;
     position: relative;
 }
 .crewDroite img {
     width: 100%;
+    max-height: 500px;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 0;
+    object-fit: contain;
 }
 .crewGaucheBot {
     height: 30px;
