@@ -1,13 +1,26 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import Nav from "../../component/Nav/Nav"
 import "./Home.css"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 export default function Home({active, setActive}) {
+
+  const navigate = useNavigate()
 
   useEffect(()=>{
     setActive("home")
   }, [])
+
+  const [animation, setAnimation] = useState(false)
+
+  const handleClick = ()=>{
+    setAnimation(true)
+    const timer = setTimeout(()=>{
+      navigate("/destination/0")
+    }, 500) 
+
+    return()=> clearTimeout(timer)
+  }
 
   return (
     <div className="Home">
@@ -21,9 +34,9 @@ export default function Home({active, setActive}) {
             truly out of this world experience!</p>
         </div>
         <div className="homeDroite">
-            <Link to='/destination/0'>
-              <div className="homeExploreCircle">
-                  EXPLORE
+            <Link onClick={handleClick}>
+              <div className={`homeExploreCircle ${animation ? "active" : ""}`}>
+                  <span>EXPLORE</span>
               </div>
             </Link>
         </div>

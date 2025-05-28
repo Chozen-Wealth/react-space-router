@@ -32,9 +32,9 @@ export default function Technology({active, setActive}) {
         <span>03 <span>SPACE LAUNCH 101</span></span>
         <div className="techDiv">
           <div className="techBubbles">
-            <Link>1</Link>
-            <Link>2</Link>
-            <Link>3</Link>
+            <Link className={idActuelle === 0 ? "active" : ""} to="/technology/0">1</Link>
+            <Link className={idActuelle === 1 ? "active" : ""} to="/technology/1">2</Link>
+            <Link className={idActuelle === 2 ? "active" : ""} to="/technology/2">3</Link>
           </div>
             <div className="techInfos">
                 <span>THE TERMINOLOGY</span>

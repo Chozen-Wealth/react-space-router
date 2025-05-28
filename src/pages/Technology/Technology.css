@@ -17,13 +17,13 @@
     height: 100%;
     width: 50%;
 }
-.techGauche span {
+.techGauche >span {
     color: rgba(255, 255, 255, 0.5);
     font-size: 30px;
     font-weight: 300;
     letter-spacing: 2px;
 }
-.techGauche span span {
+.techGauche >span span {
     color: white;
 }
 .techDiv {
@@ -47,11 +47,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Cinzel", serif;
+    transition: 0.3s ease;
+}
+.techBubbles a.active {
+    background-color: white;
+    color: black;
 }
 .techInfos {
     display: flex;
     flex-direction: column;
 }
-.techInfos span:first-of-type {
-    
+.techInfos> span:first-of-type {
+    font-size: 14px;
+    color: rgb(210, 216, 249);
+}
+.techInfos > span:last-of-type {
+    font-family: "Cinzel", serif;
+    font-size: 50px;
+}
+.techInfos >p {
+    color: rgb(210, 216, 249);
+    line-height: 25px;
+}
+.techDroite {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.techDroite > img {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    right: 10%;
+    object-fit: cover;
 }

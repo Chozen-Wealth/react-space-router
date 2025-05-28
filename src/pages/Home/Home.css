@@ -7,6 +7,7 @@
     display: flex;
     padding-left: 10%;
     padding-right: 10%;
+    overflow: hidden;
 }
 .homeGauche {
     width: 50%;
@@ -54,7 +55,26 @@
     font-weight: lighter;
     cursor: pointer;
     animation: pulseCircle 2s ease forwards infinite;
-    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0);
+    transition: 0.5s ease-in-out;
+}
+.homeExploreCircle span {
+    font-family: "Cinzel", serif;
+    font-size: 28px;
+    transition: 0.5s ease-in-out;
+    opacity: 1;
+}
+.homeExploreCircle:hover {
+    transform: scale(120%);
+}
+.homeExploreCircle:hover span {
+    transform: scale(80%);
+}
+.homeExploreCircle.active {
+    transform: scale(1000%);
+}
+.homeExploreCircle.active span {
+    transform: scale(0%);
+    opacity: 0;
 }
 .homeDroite > a{
     color: black;

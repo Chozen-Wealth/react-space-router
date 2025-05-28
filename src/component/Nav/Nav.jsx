@@ -13,7 +13,7 @@ export default function Nav({active, setActive}) {
             <Link to="/" className={`link ${active === "home" ? "active" : ""}`}><li>00 HOME</li></Link>
             <Link to="/destination/0" className={`link ${active === "destination" ? "active" : ""}`}><li>01 DESTINATION</li></Link>
             <Link to="/crew/0" className={`link ${active === "crew" ? "active" : ""}`}><li>02 CREW</li></Link>
-            <Link to="/technology" className={`link ${active === "technology" ? "active" : ""}`}><li>03 TECHNOLOGY</li></Link>
+            <Link to="/technology/0" className={`link ${active === "technology" ? "active" : ""}`}><li>03 TECHNOLOGY</li></Link>
         </ul>
     </nav>
   )
