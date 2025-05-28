@@ -16,7 +16,7 @@ export default function Home({active, setActive}) {
   const handleClick = ()=>{
     setAnimation(true)
     const timer = setTimeout(()=>{
-      navigate("react-space-router/destination/0")
+      navigate("/react-space-router/destination/0")
     }, 500) 
 
     return()=> clearTimeout(timer)
