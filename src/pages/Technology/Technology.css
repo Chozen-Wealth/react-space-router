@@ -66,6 +66,7 @@
 .techInfos > span:last-of-type {
     font-family: "Cinzel", serif;
     font-size: 50px;
+    text-wrap: nowrap;
 }
 .techInfos >p {
     color: rgb(210, 216, 249);
