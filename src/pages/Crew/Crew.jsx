@@ -34,10 +34,10 @@ export default function Crew({active, setActive}) {
               <p>{crewActuel.description}</p>
             </div>
             <div className="crewGaucheBot">
-                <Link to="/crew/0" ><div className={`dot ${idActuelle === 0 ? "active" : ""}`}></div></Link>
-                <Link to="/crew/1" ><div className={`dot ${idActuelle === 1 ? "active" : ""}`}></div></Link>
-                <Link to="/crew/2" ><div className={`dot ${idActuelle === 2 ? "active" : ""}`}></div></Link>
-                <Link to="/crew/3" ><div className={`dot ${idActuelle === 3 ? "active" : ""}`}></div></Link>
+                <Link to="/react-space-router/crew/0" ><div className={`dot ${idActuelle === 0 ? "active" : ""}`}></div></Link>
+                <Link to="/react-space-router/crew/1" ><div className={`dot ${idActuelle === 1 ? "active" : ""}`}></div></Link>
+                <Link to="/react-space-router/crew/2" ><div className={`dot ${idActuelle === 2 ? "active" : ""}`}></div></Link>
+                <Link to="/react-space-router/crew/3" ><div className={`dot ${idActuelle === 3 ? "active" : ""}`}></div></Link>
             </div>
           </div>
           <div className="crewDroite">
