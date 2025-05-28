@@ -8,6 +8,7 @@
     padding-right: 10%;
     display: flex;
     justify-content: space-between;
+    overflow: auto;
 }
 .crewGauche {
     color: white;
@@ -22,6 +23,7 @@
     font-size: 30px;
     font-weight: 300;
     letter-spacing: 2px;
+    text-wrap: nowrap;
 }
 .crewGaucheTop span span {
     color: white;
@@ -45,20 +47,6 @@
     line-height: 25px;
     color: rgb(210, 216, 249);
 }
-.crewDroite {
-    width: 50%;
-    height: 100%;
-    position: relative;
-}
-.crewDroite img {
-    width: 100%;
-    max-height: 500px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-    object-fit: contain;
-}
 .crewGaucheBot {
     height: 30px;
     width: 100%;
@@ -74,4 +62,87 @@
 }
 .dot.active {
     background-color: white;
+}
+.crewDroite {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.crewDroite img {
+    width: 450px;
+    max-height: 450px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-48%);
+    bottom: 0;
+    object-fit: contain;
+}
+@media (max-width:1024px) {
+    .Crew {
+        padding-right: 0;
+    }
+    .crewGauche {
+        position: relative;
+        z-index: 1;
+    }
+    .crewGaucheTop span {
+        font-size: 24px;
+    }
+    .crewDroite img {
+        transform: none;
+        left: auto;
+        right: 0px;
+    }
+    .crewGaucheMid span:first-of-type {
+    font-size: 24px;
+    }
+    .crewGaucheMid span:nth-of-type(2) {
+        font-size: 40px;
+        text-wrap: nowrap;
+        margin-bottom: 20px;
+        filter: drop-shadow(0px 3px 3px black);
+    }
+}
+@media (max-width:768px) {
+    .Crew {
+        flex-direction: column;
+        padding-right: 10%;
+        gap: 50px;
+    }
+    .crewDroite {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .crewDroite img {
+        position: static;
+        height: 100%;
+        width: 100%;
+    }
+    .crewGauche {
+        width: 100%;
+        gap: 50px;
+        align-items: center;
+    }
+    .crewGaucheMid {
+        height: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .crewGaucheBot {
+        justify-content: center;
+    }
+}
+@media (max-width:425px) {
+    .crewGaucheTop span {
+        font-size: 20px;
+    }
+    .crewGaucheMid >span:first-of-type {
+        font-size: 20px;
+    }
+    .crewGaucheMid >span:nth-of-type(2) {
+        font-size: 28px;
+    }
 }
