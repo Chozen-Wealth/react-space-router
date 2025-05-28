@@ -123,11 +123,13 @@
     .homeDroite {
         justify-content: center;
         padding-bottom: 50px;
+        width: 100%;
     }
     .homeGauche {
         padding-top: 50px;
         align-items: center;
         text-align: center;
+        width: 100%;
     }
     .homeExploreCircle {
         height: 200px;
