@@ -11,11 +11,11 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/react-space-router/' element={<Home active={active} setActive={setActive} />} />
-        <Route path="/react-space-router/destination" element={<Navigate to="/destination/0" />} />
-        <Route path='/react-space-router/destination/:id' element={<Destination active={active} setActive={setActive} />} />
-        <Route path='/react-space-router/crew/:id' element={<Crew active={active} setActive={setActive} />} />
-        <Route path='/react-space-router/technology/:id' element={<Technology active={active} setActive={setActive} />} />
+        <Route path='/' element={<Home active={active} setActive={setActive} />} />
+        <Route path="/destination" element={<Navigate to="/destination/0" />} />
+        <Route path='/destination/:id' element={<Destination active={active} setActive={setActive} />} />
+        <Route path='/crew/:id' element={<Crew active={active} setActive={setActive} />} />
+        <Route path='/technology/:id' element={<Technology active={active} setActive={setActive} />} />
       </Routes>
     </>
   )

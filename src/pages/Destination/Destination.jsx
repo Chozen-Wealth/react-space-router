@@ -39,7 +39,7 @@ export default function Destination({active, setActive}) {
       <div className="destinationDroite">
         <div className="destinationMenu">
           {planetes.map(element => (
-            <Link key={element.id} to={`/react-space-router/destination/${element.id}`} className={idActuelle === element.id ? "active" : ""}>{element.planete}</Link>
+            <Link key={element.id} to={`/destination/${element.id}`} className={idActuelle === element.id ? "active" : ""}>{element.planete}</Link>
           ))}
         </div>
 
