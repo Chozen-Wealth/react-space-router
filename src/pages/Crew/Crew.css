@@ -60,6 +60,9 @@
     background-color: rgba(255, 255, 255, 0.5);
     transition: 0.3s ease;
 }
+
+/* C'est parfait ça marche très bien, petit + si tu avais agrandis la taille du bouton lorsqu'il est actif */
+
 .dot.active {
     background-color: white;
 }

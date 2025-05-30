@@ -36,6 +36,9 @@ export default function Technology({active, setActive}) {
             <Link className={idActuelle === 1 ? "active" : ""} to="/technology/1">2</Link>
             <Link className={idActuelle === 2 ? "active" : ""} to="/technology/2">3</Link>
           </div>
+
+          {/* ça aurait été bien de center l'image avec le texte et les boutons mais c'est un detail */}
+
             <div className="techInfos">
                 <span>THE TERMINOLOGY</span>
               <span>{techActuelle.nom}</span>

@@ -1,0 +1,31 @@
+- META
+  - Le projet est sur Github est dispose de commit suffisant 🆗
+  - Les commits sont cohérent avec le contenu ajouté a ce moment précis 🆗
+  - La deadline de mise en ligne a été respecté ? 🆗
+  - L'app est fonctionnelle sur git-page 🆗
+
+- HTML:
+  - Le Html est clairs, propre et commenté 🆗
+  - La structure des Div est respecté: Header, Nav, Main, Section, Div ... 🆗
+  - La structure html respecte globalement les besoin du site (rien ne manque, rien n'est de trop) 🆗
+
+- DESIGN:
+  - Le projet respect l'entièreté de la palette de couleurs. 🆗
+  - La police, les icones 🆗
+  - Les images et assets sont bien les mêmes 🆗
+  - Les dépendances sont bien installées sur le projet 🆗
+  - Les tailles, les bords, les centrages doivent être équivalent au design présenté
+  - Les fichiers css ou Sass sont bien hiérarchisées, a leur place, commenté 🆗
+  - Le projet est responsive aux quatre taille d'écran, mobile L, tablette, Laptop et grand ecran 🆗
+  - Le responsive respecte aux version demandée dans les assets Design 🆗
+  - Menu Burger Présent au responsive 🆗
+  - Comportement global attendus aux responsive présent 🆗
+  - Positionnement global des éléments est respecté 🆗
+
+- FONCTIONALITES:
+  - Présence des fonctionnalités demandés, sans crash, sans erreur ni en render ni en console log 🆗
+  - Pour Spatial, les lien utilisent tous le système de sous-page comme demandé 🆗
+  - L'utilisation correcte de Outlet la ou c'est demandé. ❌
+  - L'utilisation du correcte du react Router 🆗
+
+- Vérifier que globalement toutes les contrainte et obligations on été respectés dans ce projet. 🆗
